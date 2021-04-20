@@ -1,0 +1,85 @@
+html {
+        scroll-behavior: smooth;
+    }
+
+    .green-header, .main-green-header{
+        color:#4bb96c;
+        font-size: 4.3vw;
+    }
+
+    .black-header, .main-black-header{
+        color:#000000;
+        font-size: 2.2vw;
+        font-weight: 600;
+    }
+
+    .index-page-btn{
+        color: #f5f6f8;
+        background-color: #4bb96c;
+        /* font-size: .5vw ! important; */
+    }
+
+    .responsive-width{
+        font-size: 1.5vw;
+        margin-top: 3%;
+    }
+
+    #what-we-offer-section > .row > .col-xs-6{
+        margin: 15px 0px;
+    }
+
+    section{
+        margin-left: 0px;
+        margin-right: 0px;
+        padding-top: 2vh;
+        padding-bottom: 2vh; 
+    }
+
+    .content-section{
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .alt-div{
+        background-color: #f0efeb;
+    }
+
+    @media screen and (max-width: 767px) {
+
+        .col-xs-6 > div > h3{
+            font-size: 5vw;
+        }
+        
+        .green-header{
+            font-size: 6vw;
+        }
+
+        .black-header{
+            font-size: 2.5vw;
+        }
+
+        button{
+            font-size: 3vw !important;
+        }
+
+        h1{
+        	font-size: xx-large !important;
+        }
+
+        h2{
+        	font-size: x-large !important;
+        }
+
+
+        .responsive-width{
+            font-size: 3.5vw !important;
+        }
+
+
+    }
+
+     @media screen and (max-width: 1000px) {
+        .responsive-width{
+            font-size: 2.5vw !important;
+        }
+     }

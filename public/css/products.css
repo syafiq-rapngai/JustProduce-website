@@ -1,0 +1,54 @@
+   html {
+        scroll-behavior: smooth;
+    }
+    .white-header{
+        color:#FFFFFF;
+        font-size: 4.3vw;
+    }
+
+    @media screen and (min-width: 991px) {
+    #details {
+        padding-top: 3em;
+    }
+	
+	.img-responsive{
+        opacity: 40%;
+    }
+    .main-product{
+        border-radius: 10px;
+        background-color: white;
+        border-style: solid;
+    }
+
+    .sku-image{
+        border-radius: 20px;
+    }
+
+@media screen and (min-width: 1200px) {
+
+    .scroll {
+        overflow: auto; 
+        height: 370px;
+    }
+    
+    /*Scroll bar*/
+    /* width */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+      background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555;
+    }
+}

@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ('../partials/head.ejs') %>
+
+    <!-- Google Tag Manager -->
+    <script>
+        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-5238RRK');
+    </script>
+    <!-- End Google Tag Manager -->
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167900031-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-167900031-1');
+    </script>
+    <!-- End Global site tag (gtag.js) - Google Analytics -->
+
+    
+    <link rel="stylesheet" href="/css/product-detail.css" />
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5238RRK"height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    <!-- start page loading -->
+    <div id="preloader">
+        <div class="row loader">
+            <div class="loader-icon"></div>
+        </div>
+    </div>
+    <!-- end page loading -->
+
+    <!-- start main-wrapper section -->
+    <div class="main-wrapper">
+
+       <!-- start header section -->
+    <header class="header-style1 menu_area-light">
+        <%- include ('../partials/header.ejs') %>
+    </header>
+    <!-- end header section -->
+
+        <!-- start page title section -->
+        <section class="page-title-section bg-img cover-background" data-overlay-dark="7" data-background="../img/landscape/CropdomFarm.jpg" alt="indoor hydroponics vertical farm using the Cropdom farm system">
+            <div class="container">
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <h1><%= product.name %></h1>
+                    </div>
+                    <div class="col-md-12">
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/products">What We Offer</a></li>
+                            <li><a href=":void(0)"><%= product.name %></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end page title section -->
+
+        <!-- start course-details section -->
+        <section>
+            <div class="container">
+                <div class="row">
+
+                    <!--  start course details intro -->
+                    <div class="col-lg-12 col-md-12 sm-margin-40px-bottom">
+                        <div class="padding-50px-right md-padding-30px-right sm-no-padding-right">
+                            <div class="course-details">
+                                <h2 class="margin-40px-bottom sm-margin-30px-bottom font-weight-700"><span class="text-hightlight-color">Salad Box:</span> <%= product.name %></h2>
+
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-12 xs-margin-20px-bottom">
+                                        <div class="course-details-single d-flex box-shadow-large bg-white padding-15px-all height-100">
+                                            <div class="item author">
+                                                <div class="thumb">
+                                                    <a href="javascript:void(0)"><img src="/img/products/JustMesclun_1.jpg" alt="Mesclun Salad in Packaging" /></a>
+                                                </div>
+                                                <div class="desc">
+                                                    <h4 class="font-size15 margin-5px-top font-weight-400">Ready-To-Eat</h4>
+                                                    <a href="javascript:void(0)" class="font-size17 text-black font-weight-600">Salad Box</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- course-details-single end -->
+                                    <div class="col-md-4 col-sm-12">
+                                        <div class="course-details-single d-flex box-shadow-large bg-white padding-15px-all height-100">
+                                            <div class="course-details-icon">
+                                                <i class="fas fa-weight vertical-align-top"></i>
+                                            </div>
+                                            <div class="course-details-content">
+                                                <span class="item-top-title text-black">Net Weight</span>
+                                                <h6 class="no-margin-bottom font-size18 xs-font-size16"><%= product.weight %>g</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- course-details-single end -->
+                                </div>
+
+                                <div class="row" id="details" >
+                                    <div class=" col-md-6 col-sm-12">
+                                        <div class="box-shadow-primary padding-15px-all bg-white margin-40px-top sm-margin-30px-top margin-50px-bottom sm-margin-40px-bottom">
+                                            <div class="course-img">
+                                                <div class="owl-carousel our-team">
+                                                    <% if (typeof product.images !== 'undefined') { %>
+                                                	   <% for(var x=0; x<product.images.length; x++) {%>
+                                                        <img src="../img/products/<%= product.imageurl %>/<%= product.images[x] %>.jpg" alt="<%= product.name %>" />
+                                                       <% } %> 
+                                                    <% } %> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class=" col-md-6 col-sm-12" >
+                                        <div class="horizontaltab tab-style1">
+
+                                            <!-- Categories of Product Information to Display, can include recipes in the future -->
+                                            <ul class="resp-tabs-list hor_1">
+                                                <li>Description</li>
+                                                <li>Ingredients</li>
+                                            </ul>
+
+                                            <div class="resp-tabs-container hor_1 no-padding">
+
+                                                <!-- Descriptions -->
+                                                <div>
+                                                    <div role="tabpanel" class="tab-pane fade in active show" id="information">
+                                                        <h3 class="font-size24 sm-font-size22 xs-font-size20">Product Description</h3>
+                                                        <p class="margin-20px-bottom" style="text-align: justify;"><%= product.description %></p>
+
+                                                        <ul class="list-style2">
+                                                            <li>Packaging size: <%= product.dimension %></li>
+                                                            <li>Storage: <%= product.storage %></li>
+                                                            <li><%= product.remarks %></li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+
+                                                <!-- Ingredients -->
+                                                <div>
+                                                    <div class="comment-list-wrapper scroll">
+                                                    <% if(typeof(product.ingredients) != "undefined"){%>
+                                                    <% for(var i=0; i<product.ingredients.length; i++) {%>
+                                                    <!-- Buttercrunch         -->
+                                                    
+                                                        <div class="comment-list">
+                                                            <div class="commnet_img">
+                                                                <img src="../img/ingredients/<%= product.ingredients[i].name %>.jpg" alt="<%= product.ingredients[i].name %>" class="img-fluid">
+                                                            </div>
+                                                            <div class="comment-text">
+                                                                <div class="author_info d-flex justify-content-between">
+                                                                    <a href="javascript:void(0)" class="author_name"><%= product.ingredients[i].name %></a>
+                                                                
+                                                                </div>
+                                                                <div class="rating">
+                                                                    <ul class="rating d-flex justify-content-start">
+                                                                        <!-- <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li>
+                                                                        <li><i class="fas fa-star"></i></li> -->
+                                                                    </ul>
+                                                                </div>
+                                                                <p style="white-space: pre-wrap"><%= product.ingredients[i].description %></p>
+                                                            </div>
+                                                        </div>
+                                                    
+                                                    <% } %>
+                                                    <% } %>
+                                                    </div>
+                                                </div>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  end course details intro -->
+
+                </div>
+            </div>
+        </section>
+        <!-- end course-details section -->
+
+        <!-- start Similar Products area section -->
+        <section class="courses-area bg-light-gray">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 center-col margin-70px-bottom sm-margin-60px-bottom xs-margin-50px-bottom text-center">
+                        <h3 class="font-weight-700 font-size32 md-font-size28 sm-font-size26 xs-font-size24 section-title">Related Products</h3>
+                    </div>
+                </div>
+                <div class="courses-list">
+                    <div class="owl-carousel owl-theme">
+
+                        <% for(var k=0; k<products.length; k++) {%>
+                        <!-- Related Products Grid -->
+
+                        <!-- Just Mesclun and Mizuna -->
+                        <div class="courses-box">
+                            <div class="courses-pic">
+                                <a href="/products/<%= products[k].url %>"><img src="../img/products/<%= products[k].imageurl %>/Thumbnail.jpg" alt="<%= products[k].name %>"></a>
+                            </div>
+                            <div class="course-main-content">
+                                <div class="courses-desc last-paragraph-no-margin">
+                                    <div class="courses-title">
+                                        <h4 class="font-size17 md-font-size16 sm-font-size15 margin-10px-bottom"><a href="/products/<%= products[k].url %>" class="text-theme-color"><%= products[k].name %></a></h4>
+                                    </div>
+                                    <p><%= products[k].synopsis %></p>
+                                </div>
+                            </div>
+                            <div class="courses-box-bottom">
+                                <div class="courses-icon display-inline-block">
+                                    <!-- <div class="courses-single-icon">
+                                        <i class="fas fa-money-check-alt margin-5px-right"></i>
+                                        <span class="user-number">S$5</span>
+                                    </div> -->
+                                    <div class="courses-single-icon">
+                                        <i class="fas fa-weight margin-5px-right"></i>
+                                        <span class="user-number"><%= products[k].weight %>g</span>
+                                    </div>
+                                </div>
+                                <div class="courses-button display-inline-block">
+                                    <a href="/products/<%= products[k].url %>">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <% } %>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end course area section -->
+
+        <!-- start footer section -->
+        <footer>
+            <%- include ('../partials/footer.ejs') %>
+        </footer>
+        <!-- end footer section -->
+
+    </div>
+    <!-- end main-wrapper section -->
+
+    <!-- start scroll to top -->
+    <a href="javascript:void(0)" class="scroll-to-top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
+    <!-- end scroll to top -->
+
+    <!-- all js include start -->
+
+    <!-- jQuery -->
+    <script src="../main_dependencies/js/jquery.min.js"></script>
+
+    <!-- modernizr js -->
+    <script src="../main_dependencies/js/modernizr.js"></script>
+
+    <!-- bootstrap -->
+    <script src="../main_dependencies/js/bootstrap.min.js"></script>
+
+    <!-- Serch -->
+    <script src="../main_dependencies/search/search.js"></script>
+
+    <!-- navigation -->
+    <script src="../main_dependencies/js/nav-menu.js"></script>
+
+    <!-- tab -->
+    <script src="../main_dependencies/js/easy.responsive.tabs.js"></script>
+
+    <!-- owl carousel -->
+    <script src="../main_dependencies/js/owl.carousel.min.js"></script>
+
+    <!-- jquery.counterup.min -->
+    <script src="../main_dependencies/js/jquery.counterup.min.js"></script>
+
+    <!-- stellar js -->
+    <script src="../main_dependencies/js/jquery.stellar.min.js"></script>
+
+    <!-- waypoints js -->
+    <script src="../main_dependencies/js/waypoints.min.js"></script>
+
+    <!-- tab js -->
+    <script src="../main_dependencies/js/tabs.min.js"></script>
+
+    <!-- jquery.magnific-popup js -->
+    <script src="../main_dependencies/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- isotope.pkgd.min js -->
+    <script src="../main_dependencies/js/isotope.pkgd.min.js"></script>
+
+    <!-- map js -->
+    <script src="../main_dependencies/js/map.js"></script>
+
+    <!-- custom scripts -->
+    <script src="../js/main.js"></script>
+
+    <!-- contact form scripts -->
+    <script src="../main_dependencies/js/mailform/jquery.form.min.js"></script>
+    <script src="../main_dependencies/js/mailform/jquery.rd-mailform.min.c.js"></script>
+
+    <!-- Chatfuel-chatbox script -->
+    <%- include ('../partials/chatfuel-chatbox.ejs') %>
+
+    <!-- all js include end -->
+
+</body>
+
+</html>

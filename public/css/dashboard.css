@@ -1,0 +1,8 @@
+i:hover{
+    cursor: pointer;
+}
+
+.btn-add {
+    background-color: #4bb96c !important;
+    color: white !important;
+}

@@ -1,0 +1,38 @@
+.green-header{
+    color:#4bb96c;
+    font-size: 4.3vw;
+}
+
+.attract-h1{
+    color: #4bb96c;
+}
+
+.about-green{
+    color: #4bb96c !important;
+}
+
+@media screen and (min-width: 1000px) {
+    span.md-span{
+        display: none;
+    }
+
+	.img-responsive{
+        opacity: 40%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    h1{
+        font-size: 8vh !important;
+    }
+
+    .attract-h1{
+        font-size: 2em !important;
+    }
+
+    .img-responsive{
+        opacity: 50%;
+    }
+
+}

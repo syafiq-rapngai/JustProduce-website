@@ -1,0 +1,76 @@
+    <div style="margin: auto;">
+        <div style="display: float; margin-top: 25px; width: 600px; text-align: center;">
+            <div style="display: inline-flex; padding-bottom: 10px">
+                <img src='https://i.ibb.co/CpLdnQd/logo.jpg' height="50px" width="50px">
+                <!-- <p style="color:rgb(77, 175, 77); padding-left: 5px; font-size:larger; font-weight: bold;">Just Produce</p> -->
+            </div>
+        </div>
+        <div style="width: 600px; padding: 15px; display: block; background-color: white;">
+            <h1 style= "color:#228B22; text-align: center;">Thanks for ordering from Just Produce!</h1>
+            <hr>
+
+            <!-- Order details -->
+            <h3 style="text-align: center; font-size: x-large;">Your Order</h3>
+            <p align="center" style="color:grey">{{date}} </p>
+            <div style="margin: auto; width: 600px; padding-top: 0px;">
+                <table frame=void rules=rows style="width:600px;">
+                    <tr style="border: 0; background-color: #ddddddce; font-weight: bold; font-size: large; padding-left:7px; padding-right:7px;">
+                        <th style="text-align: left; padding-top: 10px; padding-bottom: 10px;">Order # {{order_no}}</th>
+                        <th style="text-align: left; padding-top: 10px; padding-bottom: 10px;"></th>
+                        <th style="text-align: left; padding-top: 10px; padding-bottom: 10px;"></th>
+                        <th style="text-align: right;"></th>
+                    </tr>
+                </table>
+                <table border=1 frame=hsides rules=rows style="width:600px; border-top: none;">
+                    <tr style="border-bottom: 2px solid rgb(238, 166, 79); border-top: 2px solid rgb(238, 166, 79); font-weight: bold; font-size: large; color: #228B22;">
+                        <th style="text-align: left; padding-top: 10px; padding-bottom: 10px;">Description</th>
+                        <th style="text-align: left; padding-top: 10px; padding-bottom: 10px;">QTY</th>
+                        <th style="text-align: left; padding-top: 10px; padding-bottom: 10px;">Unit Price</th>
+                        <th style="text-align: right;">Amount</th>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">Just Mesclun</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_Qty}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_Price}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0; text-align: right;">{{JM_Total}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">Just Mesclun and Mustard</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_M1_Qty}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_M1_Price}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0; text-align: right;">{{JM_M1_Total}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">Just Mesclun and Sorrel</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_S_Qty}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_S_Price}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0; text-align: right;">{{JM_S_Total}}</td>
+                    </tr>
+                    <tr>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">Just Mesclun and Mizuna</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_M2_Qty}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0;">{{JM_M2_Price}}</td>
+                        <td style="padding-top: 5px; padding-bottom: 5px; border: 0; text-align: right;">{{JM_M2_Total}}</td>
+                    </tr>
+                    <tr>
+                        <th style="border-bottom: 3px solid grey;border-top: 3px solid grey;font-weight: bold;font-size: large; color: #228B22; text-align: left;">TOTAL</th>
+                        <th style="border-bottom: 3px solid grey;border-top: 3px solid grey;font-weight: bold;font-size: large; color: #228B22;"></th>
+                        <th style="border-bottom: 3px solid grey;border-top: 3px solid grey;font-weight: bold;font-size: large; color: #228B22;"></th>
+                        <th style="border-bottom: 3px solid grey;border-top: 3px solid grey;font-weight: bold;font-size: large; color: #228B22;text-align: right;">{{total_amount}}</th>
+                    </tr>
+                  </table>
+            </div>
+
+            <!-- Customer details -->
+            <h3 style="font-size: x-large; margin-bottom: 0px;">Your details</h3>
+            <div style="display:inline-block;width: 600px;">
+                <table>
+                	<tr><td width="100"><p style = "color: rgb(128, 128, 128); display: inline;">Name:</p></td> <td><p style="font-weight:bolder; margin-top:-15px;">{{name}}</p></td></tr>
+
+                	<tr><td width="100"><p style = "color: rgb(128, 128, 128); display: inline;">Email:</p></td> <td><p style="font-weight:bolder; margin-top:-15px;">{{email}}</p></td></tr>
+
+                	<tr><td width="100"><p style = "color: rgb(128, 128, 128); display: inline;">Contact Number:</p></td> <td><p style="font-weight:bolder; margin-top:-15px;">{{contact}}</p></td></tr>
+                </table>
+            </div>
+        </div>
+    </div>

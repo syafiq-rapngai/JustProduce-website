@@ -1,0 +1,9 @@
+.message {
+    border-style: solid;
+    border-color: green;
+}
+
+.error {
+    color: red;
+    display: none;
+}

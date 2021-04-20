@@ -1,0 +1,79 @@
+.btn-vendor-logo {
+    color: #212529;
+    /*background-color: #e6e7e8;*/
+    border-color: #e6e7e8;
+    margin: 0 auto;
+    height: 18vh;
+}
+
+.btn-vendor-logo:hover {
+    color: #212529;
+    background-color: #d2d3d4;
+    border-color: #d2d3d4
+}
+
+.btn-vendor-logo.focus,
+.btn-vendor-logo:focus {
+    box-shadow: 0 0 0 .2rem rgba(216, 217, 219, .5)
+}
+
+.btn-vendor-logo.disabled,
+.btn-vendor-logo:disabled {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa
+}
+
+.btn-vendor-logo:not(:disabled):not(.disabled).active,
+.btn-vendor-logo:not(:disabled):not(.disabled):active,
+.show>.btn-vendor-logo.dropdown-toggle {
+    color: #212529;
+    background-color: #dae0e5;
+    border-color: #d3d9df
+}
+
+.btn-vendor-logo:not(:disabled):not(.disabled).active:focus,
+.btn-vendor-logo:not(:disabled):not(.disabled):active:focus,
+.show>.btn-vendor-logo.dropdown-toggle:focus {
+    box-shadow: 0 0 0 .2rem rgba(216, 217, 219, .5)
+}
+
+.vendor {
+    justify-content: center;
+}
+
+.active{
+    color: white !important;
+}
+
+@media screen and (min-width: 1200px) {
+
+    .logo-margin-bottom{
+        margin-bottom: 4vh;
+    }
+
+    .logo-margin-right{
+        margin-right: 4vw;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .btn-vendor-logo {
+        color: #212529;
+        /*background-color: #e6e7e8;*/
+        border-color: #e6e7e8;
+        margin: 0 auto;
+        height: 10vh;
+    }
+
+#where-to-buy-locations img{
+    height: 80%;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show > .nav-link {
+  background-color: #4bb96c !important;
+}
+
+    
+}

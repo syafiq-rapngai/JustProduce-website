@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /node_modules/
+Disallow: /.git/
+Disallow: /public/
+Disallow: /routes/
+Disallow: /views/
+Disallow: server.js
